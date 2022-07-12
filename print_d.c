@@ -6,12 +6,12 @@
  * @i: base 10 integer to print
  * Return: number of printed digits
  */
-int print_d(va_list i)
+int print_d(va_list d)
 {
 	int a[10];
 	int j = 1, m = 1000000000, n, sum = 0, counter = 0;
 
-	n = va_arg(i, int);
+	n = va_arg(d, int);
 	if (n < 0)
 	{
 		n *= -1;
